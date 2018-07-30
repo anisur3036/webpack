@@ -1,7 +1,13 @@
-export function notify (msg) {
+function notify (msg) {
 	alert(msg)
 }
 
-export function logMsg (msg) {
+function logMsg (msg) {
 	console.log(msg);
 }
+
+
+export default {
+	notify: notify,
+	log: logMsg
+};

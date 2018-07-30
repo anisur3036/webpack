@@ -71,8 +71,6 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = notify;
-/* harmony export (immutable) */ __webpack_exports__["b"] = logMsg;
 function notify (msg) {
 	alert(msg)
 }
@@ -80,6 +78,12 @@ function notify (msg) {
 function logMsg (msg) {
 	console.log(msg);
 }
+
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+	notify: notify,
+	log: logMsg
+});
 
 
 /***/ }),
@@ -91,8 +95,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Notification__ = __webpack_require__(0);
 
 
-__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__Notification__["a" /* notify */])('Update once again and again dfsgd');
-__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__Notification__["b" /* logMsg */])('Update once again and again dfsgd');
+__WEBPACK_IMPORTED_MODULE_0__Notification__["a" /* default */].notify('Update once again and again dfsgd');
+__WEBPACK_IMPORTED_MODULE_0__Notification__["a" /* default */].log('Update once again and again dfsgd');
 
 
 /***/ })

@@ -1,4 +1,4 @@
-import {notify, logMsg} from './Notification';
+import Notification from './Notification';
 
-notify('Update once again and again dfsgd');
-logMsg('Update once again and again dfsgd');
+Notification.notify('Update once again and again dfsgd');
+Notification.log('Update once again and again dfsgd');
